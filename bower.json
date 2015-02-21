@@ -2,6 +2,7 @@
   "name": "ruben-guerrero-website",
   "private": true,
   "dependencies": {
-    "jquery": "~1.11.1"
+    "jquery": "~1.11.1",
+    "waypoints": "~3.1.1"
   }
 }
