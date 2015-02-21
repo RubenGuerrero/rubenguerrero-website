@@ -16,6 +16,8 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
+  grunt.loadNpmTasks('grunt-exec');
+
   // Configurable paths
   var config = {
     app: 'app',
@@ -355,6 +357,14 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    exec: {
+      production: {
+        cmd: function(){
+          return 'git subtree push --prefix '+config.dist+' origin gh-pages';
+        }
+      }
     }
   });
 
@@ -417,4 +427,10 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('production', [
+    'default',
+    'exec:production'
+  ]);
+
 };
