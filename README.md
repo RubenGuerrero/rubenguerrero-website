@@ -1,4 +1,22 @@
-rubenguerrero
+Rubén Guerrero Website
 =============
+Build:
+```
+grunt
+```
 
-Ruben Guerrero Website
+Development:
+```
+grunt serve
+```
+
+Test:
+```
+grunt test
+```
+
+Production:
+```
+grunt
+git subtree push --prefix dist origin gh-pages
+```
