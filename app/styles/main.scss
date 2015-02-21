@@ -1,0 +1,111 @@
+// bower:scss
+// endbower
+
+@import 'reset';
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background: url(../images/green-background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #121e21;
+}
+
+#main{
+  background: rgba(255,255,255, 0.5);
+  width: 90%;
+  max-width: 800px;
+  margin: 3em auto 0 auto;
+  padding: 2em;
+  text-align: center;
+}
+
+.welcome{
+  font-size: 3em;
+  line-height: normal;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+a{
+  color: #3c8594;
+  white-space: nowrap;
+
+  &.big-link{
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+}
+
+p{
+  margin-bottom: 1em;
+
+  &.small-margin{
+    margin-bottom: 0.5em;
+  }
+
+  &.big-margin{
+    margin-bottom: 2em;
+  }
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+h1{
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.or{
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.made-mainstream{
+  color: #fff;
+  text-align: center;
+  margin-top: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.7em;
+
+  a{
+    color: #fff;
+  }
+
+  span{
+    color: red;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  #main{
+    margin-top: 5%;
+  }
+
+  body{
+    font-size: 14px;
+  }
+
+  .welcome{
+    font-size: 2.9em;
+  }
+
+  a.big-link{
+    display: block;
+  }
+
+  .made-mainstream{
+    position: static;
+  }
+}
