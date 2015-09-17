@@ -67,29 +67,6 @@ var App = (function(){
             }
         }, { offset: 120 });
 
-        var menu = $('ul.primary-menu');
-        var offset = 121;
-
-        $('section.experience').waypoint(function(){
-            menu.find('a').removeClass('selected');
-            menu.find('[href="#experience"]').addClass('selected');
-        }, { offset: offset });
-
-        $('section.education').waypoint(function(){
-            menu.find('a').removeClass('selected');
-            menu.find('[href="#education"]').addClass('selected');
-        }, { offset: offset });
-
-        $('section.skills').waypoint(function(){
-            menu.find('a').removeClass('selected');
-            menu.find('[href="#skills"]').addClass('selected');
-        }, { offset: offset });
-
-        $('section.works').waypoint(function(){
-            menu.find('a').removeClass('selected');
-            menu.find('[href="#works"]').addClass('selected');
-        }, { offset: offset });
-
     };
 
     var init = function(){
